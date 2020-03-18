@@ -1,0 +1,24 @@
+<%- include('partials/header') %> 
+
+<!-- <strong><h1>INDEXXX</h1></strong> -->
+<div class="ui main text container">
+    <div class="ui container segment">
+    <% blogs.forEach(blog => { %>
+        <div class="ui inverted container segment">
+            <h1 class="ui header"> <%= blog.title %></h1>
+            <img class="ui centered rounded image" src=" <%= blog.image %>  " alt="blog image">
+            <p><%= blog.body.substring(0, 100) %>...</p>
+            <span class="indexDate"> <%= blog.created.toDateString() %>  </span>
+            <div id="wrapper">
+                <a href="/blogs/<%= blog._id %>">
+                    <button class="ui small inverted violet button">Read More</button>
+                </a>
+            </div>
+        </div>
+    <% }); %> 
+    </div>
+</div>
+
+
+
+<%- include('partials/footer') %> 

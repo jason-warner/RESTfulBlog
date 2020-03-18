@@ -1,0 +1,49 @@
+i.icon {
+    font-size: 2em;
+}
+.ui.text.container {
+    margin-top: 7em;
+}
+.main.container.segment {
+    position: fixed; 
+    top: 53px; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+.ui.button {
+    margin: 0;
+}
+#wrapper {
+    text-align: center;
+}
+
+a {
+    color: rgb(197, 180, 180);
+}
+
+p {
+    margin-top: 1em;
+}
+
+img {
+    width: 100%;
+}
+
+img.showImage {
+    margin-bottom: 1em;
+}
+.ui.form .field>label {
+    color: white;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+div.container.shortPage {
+    flex: 1;
+}
